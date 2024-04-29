@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusto Dish</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(70, 70, 70);
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.596);
+            padding: 1rem;
+        }
+            
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header nav ul li a {
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav a:hover{
+            color: aqua;
+        }
+        .container1{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 15px;
+        }
+        .container1 .cell{
+            width: 30%;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+        .container1 .cell h2{
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .container1 .cell span{
+            font-size: 20px;
+        }
+        .container1 .cell .line1{
+            width: 80px;
+            height: 2px;
+            background-color: red;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            margin-top: 2px;
+            margin-bottom: 20px;
+        }
+        .container2{
+            width: 100%;
+            padding: 0px 50px;
+        }
+        .container2 h1{
+            color: white;
+            text-transform: uppercase;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container2 .input{
+            width: 49%;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            padding: 5px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .container2 textarea{
+            width: 98%;
+            padding: 5px 0px 5px 5px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .container2 .line2{
+            width: 100px;
+            height: 3px;
+            background-color: red;
+            position: relative;
+            left: 50%;
+            bottom: 20px;
+            transform: translate(-50%);
+        }
+        .container2 #submit{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            background-color: transparent;
+            color: white;
+            padding: 5px 30px;
+            border: 2px solid greenyellow;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 15px;
+            margin-top: 20px;
+            transition: 0.2s;
+        }
+        .container2 #submit:hover{
+            background-color: #ffffff88;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="chef.html">Chef</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="Register form.html">Register form</a></li>
+                <li><a href="Sign in.html">Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container1">
+        <div class="cell">
+            <h2>Reservation</h2>
+            <div class="line1"></div>
+            <span>Please call (887) 654-3210</span>
+        </div>
+        <div class="cell">
+            <h2>Address</h2>
+            <div class="line1"></div>
+            <span>4321 California <br> St. San Francisco, CA 12345</span>
+        </div>
+        <div class="cell">
+            <h2>Opening Hour</h2>
+            <div class="line1"></div>
+            <span>Mon-Thurs: 10:00 AM - 11:00 PM <br> Fri-Sun: 11:00 AM - 02:00 AM</span>
+        </div>
+    </div>
+    <div class="container2">
+        <form action="guesto.html">
+            <h1>Send Us A Message</h1>
+            <div class="line2"></div>
+            <input type="text" placeholder="Name" class="input" required>
+            <input type="email" placeholder="Email" class="input" required><br>
+            <textarea cols="30" rows="8" placeholder="Message" required></textarea>
+            <input type="submit" value="Send Message" id="submit">
+        </form>
+    </div>
+</body>
+</html>
